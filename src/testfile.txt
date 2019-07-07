@@ -1,0 +1,26 @@
+mount partition 10 10
+write file1 [mynameisadham]
+write file2 [mynameisadham]
+mount partition 10 10
+read file1 a
+print a
+read file2 a
+print a
+read file2 b
+print b
+read file2 a
+print a
+mount partition2 5 5
+write file1 [12345]
+write file2 [123]
+write file3 [12345]
+write file4 [123]
+write file5 [ABC]
+mount partition2 5 5
+read file1 x
+print x
+read file2 x
+print x
+read file3 x
+print x
+write file6 [123]
