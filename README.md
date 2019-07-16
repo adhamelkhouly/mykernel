@@ -20,11 +20,12 @@ Some of the concepts implemented in this project are:
 - I/O scheduling
 - File System simulator
 - RAM and PCB simulations
+- Paging
 
 Shell Commands:
 ```
   help: Display all the commands\n");
-  quit: Exits / terminates the shell with “Bye!”
+  quit: Exits / terminates the shell with “Bye!”mykernel2
   set VAR STRING: Assigns a value to shell memory
   print VAR: Prints the STRING assigned to VAR
   run SCRIPT.TXT: Executes the file SCRIPT.TXT
@@ -35,6 +36,18 @@ Shell Commands:
 ```
 ## File Descriptions <a name="files"></a>
 - /src/
+  - DISK_driver.c: a driver that contains functions for taking care of disk operations
+  - IOSCHEDULER.c: file containing Input/Output scheduling functions
+  - cpu.c: file containing cpu scheduling and run functions
+  - interpreter.c: shell interpreter
+  - kernel.c: kernel and main file
+  - memorymanager.c: handles paging memory/RAM
+  - mykernel2: unix executable
+  - pcb.c: Process Control Block simulator
+  - ram.c: ram simulator
+  - shell.c: shell main file and input parser
+  - shellmemory.c: memory for shell variables
+  - testfile.txt: example test file to be used with run or exec.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 This was done as part of Operating Systems at McGill University.
